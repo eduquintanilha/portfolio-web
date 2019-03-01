@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+/* Global classes */
+.text-bold {
+    font-weight: bold;
+}
+.font-medium {
+    font-size: 16px;
+}
+.list-padding {
+    padding: 0.2em 0em;
+}
+.black-theme {
+    color: white!important;
+    background-color: #282c34!important;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version currently
+                                  supported by Chrome and Opera */
+}
+/* End of Global classes */
+
+body {
+    background: rgb(252, 251, 250);
+    color: #1f1f1f;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    box-sizing: border-box;
+    /*border: 2px solid red;*/
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    height: 80px;
+    -webkit-box-shadow: 4px 2px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 18px -4px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 18px -4px rgba(0,0,0,0.75);
+    background: #FFF;
+    color: #131313;
+    margin-bottom: 1em;
+}
+
+.header-container .site-name {
+    padding-left: 4em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#theme-toggle {
+    position: fixed;
+    left: auto;
+    right: 10px;
+    top: auto;
+    bottom: 1em;
+    z-index: 500;
+    font-size: 3em;
+}
+#theme-toggle:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+#header-image img {
+    width: 100%;
+    height: auto;
+    /*border: 2px solid red;*/
+}
+.main {
+    padding: 2em 1em;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    /*border: 2px solid red;*/
+}
+.profile-container {
+    width: 25%;
+    padding-top: 1em;
+    margin: 0 4em 0 4em;
+    /*border: 2px solid purple;*/
+}
+
+.profile-container .profile-image .image-wrapper {
+    display: flex;
+    align-items: center;
+}
+.profile-container .profile-image .image-wrapper img {
+    width: 150px!important;
+    min-width: 80px!important;
+    height: auto;
+    
+    border-radius: 50%;
+}
+.profile-container, .profile-bio, .profile-contact {
+    margin: 1em 0 1em 1em;
+}
+.profile-contact, .profile-contact a, .profile-contact a:visited, .profile-contact ul {
+    text-decoration: none;
+    font-weight: bold;
+    color: #303030;
+    list-style: none;
+}
+/* Hide the Bio for small devices */
+@media (max-width : 374px){
+   .profile-container{
+       display : none;
+   }
+}
+/* Decrease left margin for Bio in medium devices */
+@media (max-width : 640px){
+   .profile-container {
+       margin-left: 0.5em;
+       margin-right: 0.5em;
+   }
+   .header-container .site-name {
+       padding-left: 1em;
+   }
+}
+.content {
+    width: 100%;
+    padding: 1em 1em;
+}
+.personal-details {
+    width: 100%;
+    padding: 2em 1em;
+}
+.personal-item {
+    padding: 0.2em;
+}
+/*Profesional Experiences */
+.list-container {
+    width: 100%;
+    padding: 1em 0em;
+}
+.list-item li {
+    list-style-type: none;
+    padding: 1em 0em;
+}
+
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 1em 0em;
+    
+}
+.skill {
+    background-color: #1f1f1f;
+    margin: 0.2em;
+    padding: 4px;
+    color: white;
+}
+.skill:hover {
+    transform: scale(1.2);
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+/* Footer layout */
+#footer {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    height: 60px;
+    text-align: center;
+    -webkit-box-shadow: 1px -6px 14px -7px rgba(78, 78, 78, 0.75);
+    -moz-box-shadow: 2px -6px 14px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px -6px 14px -7px rgba(0,0,0,0.75);
+    background: #FFF;
+    color: #131313;
+    line-height: 60px;
+}
